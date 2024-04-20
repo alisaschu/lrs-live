@@ -14,10 +14,10 @@ renderer.setPixelRatio( window.devicePixelRatio);
 renderer.setSize( window.innerWidth, window.innerHeight);
 camera.position.setZ(30);
 renderer.render(scene, camera);
-var audio = new Audio('/sounds/glasses.mp3');
-var audio2 = new Audio('/sounds/paper.mp3');
-var audio3 = new Audio('/sounds/clothes.mp3');
-var audio4 = new Audio('/sounds/schwa.mp3');
+var audio = new Audio('sounds/glasses.mp3');
+var audio2 = new Audio('sounds/paper.mp3');
+var audio3 = new Audio('sounds/clothes.mp3');
+var audio4 = new Audio('sounds/schwa.mp3');
 
 
 const overlayGeometry = new THREE.PlaneGeometry(window.innerWidth, window.innerHeight); // Größe der Ebene (kann angepasst werden)
