@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'TwistedHalloween';
+    src: url('./fonts/TwistedHalloweenPersonalRegular-eZa8n.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tiresias_PCfont';
+  src: url('./fonts/Tiresias_PCfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
