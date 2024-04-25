@@ -129,6 +129,15 @@ function checkAnswer() {
 
 document.querySelector('.check-answer').addEventListener('click', checkAnswer);
 
+function onWindowResize() {
+
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize( window.innerWidth, window.innerHeight );
+
+}
+window.addEventListener( 'resize', onWindowResize );
+
 const clock = new THREE.Clock();
 function animate() {
     if(mixer)

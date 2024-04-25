@@ -178,6 +178,15 @@ function wellDone() {
   button.style.display = "inline-block";
 }
 
+function onWindowResize() {
+
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize( window.innerWidth, window.innerHeight );
+
+}
+window.addEventListener( 'resize', onWindowResize );
+
 document.querySelector('.check-answer').addEventListener('click', checkAnswer);
 const clock = new THREE.Clock();
 function animate() {

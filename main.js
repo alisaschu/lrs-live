@@ -2,10 +2,13 @@
 Code Quellen: 
 https://threejs.org/docs/
 https://discoverthreejs.com/ 
+https://discourse.threejs.org/
+https://github.com/mrdoob/three.js/blob/master/examples/webgl_lights_spotlights.html
+https://github.com/mrdoob/three.js/blob/master/examples/webgl_geometry_spline_editor.html
 https://www.youtube.com/watch?v=Q7AOvWpIVHU
 https://www.youtube.com/watch?v=ohEtw-F1FR8&t=344s
 https://www.youtube.com/watch?v=SE1HXc2V3Xk
-
+https://v2.vitejs.dev/guide/ 
 
 
 */
@@ -339,7 +342,14 @@ window.addEventListener('click', event => {
 
 window.requestAnimationFrame(render);
 
+function onWindowResize() {
 
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize( window.innerWidth, window.innerHeight );
+
+}
+window.addEventListener( 'resize', onWindowResize );
 
 // Animiere die Scene
 var a = true;
