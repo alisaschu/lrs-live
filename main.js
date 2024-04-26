@@ -341,7 +341,7 @@ window.addEventListener('click', event => {
 })
 
 window.requestAnimationFrame(render);
-
+/*
 function onWindowResize() {
 
   camera.aspect = window.innerWidth / window.innerHeight;
@@ -349,7 +349,7 @@ function onWindowResize() {
   renderer.setSize( window.innerWidth, window.innerHeight );
 
 }
-window.addEventListener( 'resize', onWindowResize );
+window.addEventListener( 'resize', onWindowResize ); */
 
 // Animiere die Scene
 var a = true;
