@@ -251,6 +251,9 @@ footer {
     background: rgba(0,0,0,0.9);
     section {
         height: 100%;
+        .container {
+            margin-top: 0;
+        }
     }
   }
 
