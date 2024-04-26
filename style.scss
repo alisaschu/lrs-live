@@ -251,15 +251,15 @@ footer {
     background: rgba(0,0,0,0.9);
     section {
         height: 100%;
-        .container {
-            margin-top: 0;
-        }
     }
   }
 
   @media only screen and (min-width: 1330px) {
     .einleitung {
       height: unset;
+      .container {
+          margin-top: 0;
+      }
     }
   }
 
